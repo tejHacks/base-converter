@@ -1,0 +1,142 @@
+/* General Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    transition: background 0.3s, color 0.3s;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to right, #141414, #051422);
+    color: white;
+}
+
+
+.container {
+    background: white;
+    color: black;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 400px;
+}
+
+.input-group {
+    margin: 15px 0;
+    text-align: left;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #3498db;
+    border-radius: 5px;
+    outline: none;
+}
+#darkModeToggle {
+    background: transparent;
+    border: 2px solid #3498db;
+    color: #3498db;
+    padding: 10px 15px;
+    font-size: 18px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#darkModeToggle i {
+    font-size: 24px;
+    transition: transform 0.3s ease-in-out;
+}
+
+#darkModeToggle:hover {
+    background: #3498db;
+    color: white;
+}
+
+.dark-mode #darkModeToggle {
+    border-color: #f39c12;
+    color: #f39c12;
+}
+
+.dark-mode #darkModeToggle:hover {
+    background: #f39c12;
+    color: black;
+}
+
+.dark-mode #darkModeToggle i {
+    transform: rotate(180deg);
+}
+
+.btn-convert, .btn-toggle {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    background: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+.btn-convert:hover, .btn-toggle:hover {
+    background: #2980b9;
+}
+
+#answer {
+    background: black;
+    color: white;
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+/* Dark Mode Styles */
+.dark-mode {
+    background: #121212;
+    color: white;
+}
+
+.dark-mode .container {
+    background: #222;
+    color: white;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+.dark-mode input, .dark-mode select {
+    background: #333;
+    color: white;
+    border: 2px solid #555;
+}
+
+.dark-mode .btn-convert, .dark-mode .btn-toggle {
+    background: #555;
+    color: white;
+}
+
+.dark-mode .btn-convert:hover, .dark-mode .btn-toggle:hover {
+    background: #777;
+}
+
+.dark-mode #answer {
+    background: #333;
+}

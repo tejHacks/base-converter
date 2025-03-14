@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="boxicons/css/boxicons.css">
+    <link rel="stylesheet" href="boxicons/css/boxicons.min.css">
+    
+</head>
+<body>
+    <div class="container">
+        <h2>Number Base Converter</h2>
+        
+        <button id="darkModeToggle"><i class="bx bx-moon fa-2x"></i></button>
+        
+        <div class="input-group">
+            <label for="fromBase">Convert From:</label>
+            <select id="fromBase">
+                <option value="2">Binary</option>
+                <option value="8">Octal</option>
+                <option value="10">Decimal</option>
+                <option value="16">Hexadecimal</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label for="NumVal">Enter Number:</label>
+            <input type="text" id="NumVal" placeholder="Enter number">
+        </div>
+
+        <div class="input-group">
+            <label for="toBase">Convert To:</label>
+            <select id="toBase">
+                <option value="2">Binary</option>
+                <option value="8">Octal</option>
+                <option value="10">Decimal</option>
+                <option value="16">Hexadecimal</option>
+            </select>
+        </div>
+
+        <button class="btn-convert" id="convert">Convert</button>
+
+        <div id="answer">
+            <p id="answerOut">Converted value appears here.</p>
+        </div>
+
+        <h3>Conversion History</h3>
+        <ul id="history"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
